@@ -85,6 +85,9 @@ const Container = styled.div`
     }
   }
   .quick-access {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     @media screen and (max-height: 640px) {
       display: none;
     }
@@ -212,11 +215,15 @@ export default function TopSection() {
           </div>
         </HashLink>
         <div className="quick-access">
-          <HashLink smooth to="/#portfolio-section">
+          <HashLink smooth to="/#profile-section">
+            <MenuItem>profile</MenuItem>
+          </HashLink>
+          <HashLink smooth to="/#publishes-section">
             <MenuItem>publishes</MenuItem>
           </HashLink>
-          <MenuItem>publishes</MenuItem>
-          <MenuItem>publishes</MenuItem>
+          <HashLink smooth to="/#contactme-section">
+            <MenuItem>contact me</MenuItem>
+          </HashLink>
         </div>
       </div>
       <div

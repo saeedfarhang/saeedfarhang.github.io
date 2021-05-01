@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import BlogCardMinimal from "../../elements/BlogCardMinimal";
 import Button from "../../elements/Button";
@@ -196,14 +197,16 @@ export default function NavBar() {
     <Container menuOpen={menuOpen} offsetYc={offsetYc}>
       <div className="close-menu-container">
         <div className="name-holder">
-          <Typography
-            className="name-holder-sf name-holder-text"
-            as="h2"
-            // fontSize="24px"
-            fontWeight="bold"
-          >
-            saeedfarhang
-          </Typography>
+          <HashLink smooth to="/#profile-section">
+            <Typography
+              className="name-holder-sf name-holder-text"
+              as="h2"
+              // fontSize="24px"
+              fontWeight="bold"
+            >
+              saeedfarhang
+            </Typography>
+          </HashLink>
           <Typography
             className="name-holder-slash name-holder-text"
             as="h2"
@@ -212,14 +215,16 @@ export default function NavBar() {
           >
             /
           </Typography>
-          <Typography
-            className="name-holder-cg name-holder-text"
-            as="h2"
-            // fontSize="24px"
-            fontWeight="bold"
-          >
-            codinguy
-          </Typography>
+          <HashLink smooth to="/#blog-section">
+            <Typography
+              className="name-holder-cg name-holder-text"
+              as="h2"
+              // fontSize="24px"
+              fontWeight="bold"
+            >
+              codinguy
+            </Typography>
+          </HashLink>
         </div>
         <div
           className="hamb-menu"

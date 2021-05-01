@@ -1,34 +1,74 @@
 [
   {
     "id": 1,
-    "title": "react js"
+    "title": "Python"
   },
   {
     "id": 2,
-    "title": "javascript"
+    "title": "Django"
   },
   {
     "id": 3,
-    "title": "python"
+    "title": "Django Rest Framework"
   },
   {
     "id": 4,
-    "title": "djangorestframework"
+    "title": "Kivy Framework"
   },
   {
     "id": 5,
-    "title": "django"
+    "title": "CSS / HTML"
   },
   {
     "id": 6,
-    "title": "adobe photoshop"
+    "title": "JavaScript"
   },
   {
     "id": 7,
-    "title": "adobe illustrator"
+    "title": "ReactJS"
   },
   {
     "id": 8,
-    "title": "adobe illustrator"
+    "title": "MaterialUI"
+  },
+  {
+    "id": 9,
+    "title": "Adobe XD"
+  },
+  {
+    "id": 10,
+    "title": "Adobe Photoshop"
+  },
+  {
+    "id": 11,
+    "title": "Adobe illustrator"
+  },
+  {
+    "id": 12,
+    "title": "Adobe AfterEffect"
+  },
+  {
+    "id": 13,
+    "title": "Adobe Premiere"
+  },
+  {
+    "id": 14,
+    "title": "Linux"
+  },
+  {
+    "id": 15,
+    "title": "Git"
+  },
+  {
+    "id": 16,
+    "title": "MySQL"
+  },
+  {
+    "id": 17,
+    "title": "Microsoft"
+  },
+  {
+    "id": 18,
+    "title": "WordPress"
   }
 ]
