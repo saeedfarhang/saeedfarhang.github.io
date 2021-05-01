@@ -236,11 +236,21 @@ export default function NavBar() {
       </div>
       <div className="open-menu-container">
         <div className="nav-menu-items">
-          <MenuItem marginTop="0">profile</MenuItem>
-          <MenuItem marginTop="40px">my portfolio</MenuItem>
-          <MenuItem marginTop="40px">blog</MenuItem>
-          <MenuItem marginTop="40px">publishes</MenuItem>
-          <MenuItem marginTop="40px">about codinguy</MenuItem>
+          <HashLink smooth to="/#profile-section">
+            <MenuItem marginTop="0">profile</MenuItem>
+          </HashLink>
+          <HashLink smooth to="/#portfolio-section">
+            <MenuItem marginTop="40px">my portfolio</MenuItem>
+          </HashLink>
+          <HashLink smooth to="/#blog-section">
+            <MenuItem marginTop="40px">blog</MenuItem>
+          </HashLink>
+          <HashLink smooth to="/#publishes-section">
+            <MenuItem marginTop="40px">publishes</MenuItem>
+          </HashLink>
+          <HashLink smooth to="/#aboutcodinguy-section">
+            <MenuItem marginTop="40px">about codinguy</MenuItem>
+          </HashLink>
         </div>
         <div className="nav-extra-content-container">
           <div className="nav-buttons">
@@ -265,8 +275,18 @@ export default function NavBar() {
           </div>
           <div className="nav-contents">
             <div className="nav-publishes">
-              <PublishCardMinimal />
-              <PublishCardMinimal className="pcm-last-child" />
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+              >
+                <PublishCardMinimal />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+              >
+                <PublishCardMinimal className="pcm-last-child" />
+              </a>
             </div>
             <div className="nav-blogs">
               <BlogCardMinimal />
