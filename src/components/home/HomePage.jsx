@@ -22,6 +22,7 @@ const Container = styled.div`
 export default function HomePage() {
   return (
     <Container>
+      <div id="top-section"></div>
       <TopSection />
       <div className="section-seperator" id="profile-section"></div>
       <ProfileSection />
