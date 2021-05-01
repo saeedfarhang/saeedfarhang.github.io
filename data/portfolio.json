@@ -5,17 +5,34 @@
     "snippet_text": "TEDxLavasan is one of the websites I recently created. it's for an event. blablabla",
     "url": "https://www.tedxlavasan.com"
   },
-
   {
     "id": 2,
-    "title": "TEDxLavasan",
+    "title": "TEDxIUT",
     "snippet_text": "TEDxLavasan is one of the websites I recently created. it's for an event. blablabla",
-    "url": "https://www.tedxlavasan.com"
+    "url": "https://www.tedxiut.ir"
   },
   {
     "id": 3,
-    "title": "TEDxLavasan",
-    "snippet_text": "TEDxLavasan is one of the websites I recently created. it's for an event. blablabla",
-    "url": "https://www.tedxlavasan.com"
+    "title": "therepeia",
+    "snippet_text": "this is an e-commerce site using django and react js. you can see the source in my github.",
+    "url": "https://www.therepeia.com"
+  },
+  {
+    "id": 4,
+    "title": "Minerva",
+    "snippet_text": "this is one of my free time project I just created with django for backend and react js for front end. it's an online course web app.",
+    "url": "https://github.com/saeedfarhang/Minerva_v2"
+  },
+  {
+    "id": 5,
+    "title": "pythonVoiceAssistant",
+    "snippet_text": "this is something i been make in my free time. it's an online Voice assistant created by python. you can see the source code by clicking on the open-link icon.",
+    "url": "https://github.com/saeedfarhang/pythonVoiceAssistant"
+  },
+  {
+    "id": 6,
+    "title": "See More ...",
+    "snippet_text": "honestlly i have some more project that i can show you. see my github profile or my linkedin.",
+    "url": "https://github.com/saeedfarhang"
   }
 ]
