@@ -265,11 +265,31 @@ export default function NavBar() {
                 hire me
               </Button>
               <div className="nav-social-btns">
-                <SocialLink marginRight="12px" social="twitter" />
-                <SocialLink marginRight="12px" social="twitter" />
-                <SocialLink marginRight="12px" social="twitter" />
-                <SocialLink marginRight="12px" social="twitter" />
-                <SocialLink marginRight="12px" social="twitter" />
+                <SocialLink
+                  href="https://twitter.com/_saeedfarhang_"
+                  marginRight="12px"
+                  social="twitter"
+                />
+                <SocialLink
+                  href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+                  marginRight="12px"
+                  social="youtube"
+                />
+                <SocialLink
+                  href="https://www.linkedin.com/in/saeedfarhang/"
+                  marginRight="12px"
+                  social="linkedin"
+                />
+                {/* <SocialLink
+                  href="https://"
+                  marginRight="12px"
+                  social="twitter"
+                />
+                <SocialLink
+                  href="https://"
+                  marginRight="12px"
+                  social="twitter"
+                /> */}
               </div>
             </div>
           </div>
