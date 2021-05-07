@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import Button from "../elements/Button";
