@@ -2,14 +2,8 @@
   {
     "id": 1,
     "title": "TEDxLavasan",
-    "snippet_text": "TEDxLavasan is one of the websites I recently created. it's for an event. blablabla",
-    "url": "https://www.tedxlavasan.com"
-  },
-  {
-    "id": 2,
-    "title": "TEDxIUT",
-    "snippet_text": "TEDxLavasan is one of the websites I recently created. it's for an event. blablabla",
-    "url": "https://www.tedxiut.ir"
+    "snippet_text": "TEDxLavasan is one of the websites I recently created. I use React js in it and deploy it on github pages. it's for an event named TEDxLavasan.",
+    "url": "https://github.com/saeedfarhang/tedxlavasan-v2/"
   },
   {
     "id": 3,
