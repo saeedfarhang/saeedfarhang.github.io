@@ -175,7 +175,7 @@ export default function TopSection() {
             as="p"
             textAlign="left"
           >
-            also I ran a channel on YouTube named codinguy. see more about it by
+            also I run a channel on YouTube named CodinGuy. see more about it by
             clicking codinguy in nav.
           </Typography>
         </div>
