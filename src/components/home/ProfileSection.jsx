@@ -94,12 +94,16 @@ export default function ProfileSection(props) {
         textAlign="left"
         lineHeight="32px"
       >
-        frontend and backend developer - python (django) and javascript (react
-        js) programmer - Absorbed by web programming world - also try to be a
-        creative thinker - expert in teamwork - interested in solving problems
-        that he has no idea how to solve - interested in training and
-        transmitting information - Always learning - interested in open-source
-        world - expert in graphic design and create simple animations
+        I started my programming journey with Python and Django. Then I tried to
+        take that to the next level by starting to learn Javascript and soon got
+        very amazed by the power of Js frameworks such as react and nest-js.
+        after a while, I started to think that there is no better place for me
+        but behind my computer... backend and frontend developer - Absorbed by
+        web programming world - almost 21 - also try to be a creative thinker -
+        expert in teamwork - interested in solving problems that he has no idea
+        how to solve - interested in training and transmitting information -
+        Always learning - interested in the open-source world - have some
+        experience in graphic design and create simple animations -
       </Typography>
       <div className="ps-download-btn">
         <Button className="download-btn" icon="download">
