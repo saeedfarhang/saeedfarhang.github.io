@@ -4,7 +4,7 @@ import Footer from "../Footer";
 import AboutCodinguySection from "./AboutCodinguySection";
 import BlogSection from "./BlogSection";
 import ContactMeSection from "./ContactMeSection";
-import PortfolioSection from "./PortfolioSection";
+// import PortfolioSection from "./PortfolioSection";
 import ProfileSection from "./ProfileSection";
 import PublishesSection from "./PublishesSection";
 import TopSection from "./TopSection";
@@ -26,8 +26,8 @@ export default function HomePage() {
       <TopSection />
       <div className="section-seperator" id="profile-section"></div>
       <ProfileSection />
-      <div className="section-seperator" id="portfolio-section"></div>
-      <PortfolioSection />
+      {/* <div className="section-seperator" id="portfolio-section"></div>
+      <PortfolioSection /> */}
       <div className="section-seperator" id="blog-section"></div>
       <BlogSection />
       <div className="section-seperator" id="publishes-section"></div>

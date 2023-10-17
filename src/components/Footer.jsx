@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import Button from "../elements/Button";
@@ -110,7 +109,7 @@ export default function Footer(props) {
           </div>
           <div className="foot-btns">
             <Button margin="5px 12px 5px 0" icon="download">
-              download my ressume
+              download my resume
             </Button>
             <Button margin="5px 12px 5px 0" icon="download">
               donate me
@@ -130,9 +129,9 @@ export default function Footer(props) {
           <HashLink smooth to="/#profile-section">
             <MenuItem marginTop="0">profile</MenuItem>
           </HashLink>
-          <HashLink smooth to="/#portfolio-section">
+          {/* <HashLink smooth to="/#portfolio-section">
             <MenuItem marginTop="40px">my portfolio</MenuItem>
-          </HashLink>
+          </HashLink> */}
           <HashLink smooth to="/#blog-section">
             <MenuItem marginTop="40px">blog</MenuItem>
           </HashLink>

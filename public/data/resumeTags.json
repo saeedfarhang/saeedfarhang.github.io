@@ -13,39 +13,39 @@
   },
   {
     "id": 4,
-    "title": "Kivy Framework"
+    "title": "TypeScript"
   },
   {
     "id": 5,
-    "title": "CSS / HTML"
+    "title": "NestJs"
   },
   {
     "id": 6,
-    "title": "JavaScript"
+    "title": "Kafka"
   },
   {
     "id": 7,
-    "title": "ReactJS"
+    "title": "Docker Products"
   },
   {
     "id": 8,
-    "title": "MaterialUI"
+    "title": "JavaScript"
   },
   {
     "id": 9,
-    "title": "Adobe XD"
+    "title": "CI/CD"
   },
   {
     "id": 10,
-    "title": "Adobe Photoshop"
+    "title": "Git"
   },
   {
     "id": 11,
-    "title": "Adobe illustrator"
+    "title": "Gitlab"
   },
   {
     "id": 12,
-    "title": "Adobe AfterEffect"
+    "title": "GraphQL"
   },
   {
     "id": 13,
@@ -61,14 +61,34 @@
   },
   {
     "id": 16,
-    "title": "MySQL"
+    "title": "Linux"
   },
   {
     "id": 17,
-    "title": "Microsoft"
+    "title": "mongoDB"
   },
   {
     "id": 18,
-    "title": "WordPress"
+    "title": "NextJs"
+  },
+  {
+    "id": 19,
+    "title": "Node.JS"
+  },
+  {
+    "id": 20,
+    "title": "Postgres"
+  },
+  {
+    "id": 21,
+    "title": "Prisma"
+  },
+  {
+    "id": 22,
+    "title": "ReactJs"
+  },
+  {
+    "id": 23,
+    "title": "SQL"
   }
 ]

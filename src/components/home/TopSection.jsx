@@ -1,11 +1,11 @@
+import { Power3, TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import MenuItem from "../../elements/MenuItem";
 import SocialLink from "../../elements/SocialLink";
 import Typography from "../../elements/Typography";
-import { HashLink } from "react-router-hash-link";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Container = styled.div`
   /* height: calc(100vh - 150px); */
@@ -30,7 +30,7 @@ const Container = styled.div`
     }
     .texts {
       .title {
-        width: 433px;
+        width: 533px;
         @media screen and (max-width: 540px) {
           width: 333px;
         }
@@ -166,7 +166,7 @@ export default function TopSection() {
             fontWeight="bold"
             textAlign="left"
           >
-            hi! im Saeed Farhang. python and JavaScript developer.
+            Hello! I am Saeed Farhang, a Python and TypeScript developer.
           </Typography>
           <Typography
             className="description"
@@ -175,8 +175,8 @@ export default function TopSection() {
             as="p"
             textAlign="left"
           >
-            also I run a channel on YouTube named CodinGuy. see more about it by
-            clicking codinguy in nav.
+            I also run a YouTube channel called 'codinguy.' You can learn more
+            about it by clicking 'codinguy' in the navigation menu.
           </Typography>
         </div>
         <div className="social-links">
