@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import { TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import BlogCard from "../../elements/BlogCard";
 import SectionTitle from "../../elements/SectionTitle";
 import SeeMore from "../../elements/SeeMore";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 const Container = styled.div`
   .blogcards-container {
     padding: 60px 10vw 25px 10vw;
@@ -25,9 +26,14 @@ const Container = styled.div`
 `;
 
 export default function BlogSection(props) {
+  const [blogs, setBlogs] = useState([]);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    axios.get(`${process.env.PUBLIC_URL}/data/blog.json`).then((res) => {
+      setBlogs(res.data);
+    });
+
     TweenLite.from(".blog-section-title", {
       scrollTrigger: {
         scrub: 1,
@@ -64,12 +70,9 @@ export default function BlogSection(props) {
     <Container>
       <SectionTitle className="blog-section-title">blog</SectionTitle>
       <div className="blogcards-container">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs.map((blog) => (
+          <BlogCard content={blog.content} title={blog.title} />
+        ))}
       </div>
       <SeeMore className="b-seemore" />
     </Container>
