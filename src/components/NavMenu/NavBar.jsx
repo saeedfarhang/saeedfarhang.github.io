@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import BlogCardMinimal from "../../elements/BlogCardMinimal";
@@ -189,7 +190,12 @@ export default function NavBar() {
     setOffsetYc(window.scrollY);
     setMenuOpen(false);
   };
+  const [blogs, setBlogs] = useState([]);
+
   useEffect(() => {
+    axios.get(`${process.env.PUBLIC_URL}/data/blog.json`).then((res) => {
+      setBlogs(res.data);
+    });
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -311,8 +317,18 @@ export default function NavBar() {
               </a>
             </div>
             <div className="nav-blogs">
-              <BlogCardMinimal />
-              <BlogCardMinimal />
+              {blogs.length && blogs[0] ? (
+                <BlogCardMinimal
+                  title={blogs[0].title}
+                  likeCount={blogs[0].likeCount}
+                />
+              ) : null}
+              {blogs.length && blogs[1] ? (
+                <BlogCardMinimal
+                  title={blogs[1].title}
+                  likeCount={blogs[1].likeCount}
+                />
+              ) : null}
             </div>
           </div>
         </div>

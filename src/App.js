@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import NavBar from "./components/NavMenu/NavBar";
 import HomePage from "./components/home/HomePage";

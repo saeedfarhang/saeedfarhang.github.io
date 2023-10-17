@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import { TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PublishCard from "../../elements/PublishCard";
 import SectionTitle from "../../elements/SectionTitle";
 import SeeMore from "../../elements/SeeMore";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 const Container = styled.div`
   .pc-container {
     padding: 30px 8vw 15px 8vw;
@@ -22,8 +23,13 @@ const Container = styled.div`
 `;
 
 export default function PublishesSection(props) {
+  const [publishes, setPublishes] = useState([]);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
+    axios.get(`${process.env.PUBLIC_URL}/data/publishes.json`).then((res) => {
+      setPublishes(res.data);
+    });
+
     TweenLite.from(".publishes-title-section", {
       scrollTrigger: {
         trigger: ".publishes-title-section",
@@ -59,14 +65,9 @@ export default function PublishesSection(props) {
     <Container>
       <SectionTitle className="publishes-title-section">publishes</SectionTitle>
       <div className="pc-container">
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
-        <PublishCard margin="10px" />
+        {publishes.map((publish) => (
+          <PublishCard margin="10px" />
+        ))}
       </div>
       <SeeMore className="p-seemore" />
     </Container>
