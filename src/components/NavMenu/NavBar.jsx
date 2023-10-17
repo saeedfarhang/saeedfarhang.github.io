@@ -303,17 +303,43 @@ export default function NavBar() {
             <div className="nav-publishes">
               <a
                 target="_blank"
-                href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+                href="https://youtu.be/Xjb5yB6yMPI"
                 rel="noreferrer"
               >
-                <PublishCardMinimal />
+                <PublishCardMinimal>
+                  <iframe
+                    width="310"
+                    height="196"
+                    src="https://www.youtube.com/embed/Xjb5yB6yMPI"
+                    title="دریافت اطلاعات از صفحات وب با پایتون - معرفی و نصب سلنیوم | جلسه اول (web scrapping python selenium)"
+                    frameborder="10"
+                    allowfullscreen="allowfullscreen"
+                    mozallowfullscreen="mozallowfullscreen"
+                    msallowfullscreen="msallowfullscreen"
+                    oallowfullscreen="oallowfullscreen"
+                    webkitallowfullscreen="webkitallowfullscreen"
+                  ></iframe>
+                </PublishCardMinimal>
               </a>
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
                 rel="noreferrer"
               >
-                <PublishCardMinimal className="pcm-last-child" />
+                <PublishCardMinimal className="pcm-last-child">
+                  <iframe
+                    width="310"
+                    height="196"
+                    src="https://www.youtube.com/embed/vVUFjTBflwU"
+                    title="پروژه های جنگو - ساخت اپلیکیشن لیست کارها - معرفی و استارت پروژه | جلسه اول (todo list app django)"
+                    frameborder="10"
+                    allowfullscreen="allowfullscreen"
+                    mozallowfullscreen="mozallowfullscreen"
+                    msallowfullscreen="msallowfullscreen"
+                    oallowfullscreen="oallowfullscreen"
+                    webkitallowfullscreen="webkitallowfullscreen"
+                  ></iframe>
+                </PublishCardMinimal>
               </a>
             </div>
             <div className="nav-blogs">
