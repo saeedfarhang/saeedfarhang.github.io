@@ -1,15 +1,15 @@
+import axios from "axios";
+import { TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import styled from "styled-components";
 import Button from "../../elements/Button";
 import SectionTitle from "../../elements/SectionTitle";
 import Tag from "../../elements/Tag";
 import Typography from "../../elements/Typography";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import axios from "axios";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Container = styled.div`
   position: relative;
@@ -37,7 +37,7 @@ export default function ProfileSection(props) {
   const [tags, setTags] = useState([]);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    axios.get(`${process.env.PUBLIC_URL}/data/ressumeTags.json`).then((res) => {
+    axios.get(`${process.env.PUBLIC_URL}/data/resumeTags.json`).then((res) => {
       setTags(res.data);
     });
 
@@ -94,20 +94,15 @@ export default function ProfileSection(props) {
         textAlign="left"
         lineHeight="32px"
       >
-        I started my programming journey with Python and Django. Then I tried to
-        take that to the next level by starting to learn Javascript and soon got
-        very amazed by the power of Js frameworks such as react and nest-js.
-        after a while, I started to think that there is no better place for me
-        but behind my computer... backend and frontend developer - Absorbed by
-        web programming world - almost 21 - also try to be a creative thinker -
-        expert in teamwork - interested in solving problems that he has no idea
-        how to solve - interested in training and transmitting information -
-        Always learning - interested in the open-source world - have some
-        experience in graphic design and create simple animations -
+        I am a developer with a strong focus on productivity and a
+        specialization in Python (Django) and TypeScript (NestJs/ReactJs)
+        technologies. With nearly four years of experience, I have successfully
+        collaborated with tech companies on a variety of projects, utilizing
+        modern programming languages and frameworks.
       </Typography>
       <div className="ps-download-btn">
         <Button className="download-btn" icon="download">
-          download my ressume
+          download my resume
         </Button>
       </div>
       <div className="tags-container">

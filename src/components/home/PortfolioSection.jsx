@@ -1,12 +1,12 @@
+import axios from "axios";
+import { TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useState } from "react";
 import Scrollbars from "react-custom-scrollbars";
 import styled from "styled-components";
 import PortFolioCard from "../../elements/PortFolioCard";
 import SectionTitle from "../../elements/SectionTitle";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import Typography from "../../elements/Typography";
-import axios from "axios";
 
 const Container = styled.div`
   .portfolio-cards-container {
@@ -67,6 +67,7 @@ export default function PortfolioSection(props) {
       x: "-20vw",
     });
   }, []);
+
   return (
     <Container>
       <SectionTitle className="portfolio-section-title">portfolio</SectionTitle>

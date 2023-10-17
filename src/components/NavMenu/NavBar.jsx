@@ -239,9 +239,9 @@ export default function NavBar() {
           <HashLink smooth to="/#profile-section">
             <MenuItem marginTop="0">profile</MenuItem>
           </HashLink>
-          <HashLink smooth to="/#portfolio-section">
+          {/* <HashLink smooth to="/#portfolio-section">
             <MenuItem marginTop="40px">my portfolio</MenuItem>
-          </HashLink>
+          </HashLink> */}
           <HashLink smooth to="/#blog-section">
             <MenuItem marginTop="40px">blog</MenuItem>
           </HashLink>
@@ -256,7 +256,7 @@ export default function NavBar() {
           <div className="nav-buttons">
             <div className="nav-btns">
               <Button margin="5px 12px 5px 0" icon="download">
-                download my ressume
+                download my resume
               </Button>
               <Button margin="5px 12px 5px 0" icon="download">
                 donate me
@@ -298,12 +298,14 @@ export default function NavBar() {
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+                rel="noreferrer"
               >
                 <PublishCardMinimal />
               </a>
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCw9CcaW7usjx--4cCIYh7rg"
+                rel="noreferrer"
               >
                 <PublishCardMinimal className="pcm-last-child" />
               </a>

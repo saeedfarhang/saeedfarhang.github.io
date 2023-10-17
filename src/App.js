@@ -1,8 +1,7 @@
 import React from "react";
-import Scrollbars from "react-custom-scrollbars";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import HomePage from "./components/home/HomePage";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import NavBar from "./components/NavMenu/NavBar";
+import HomePage from "./components/home/HomePage";
 
 export default function App() {
   return (
