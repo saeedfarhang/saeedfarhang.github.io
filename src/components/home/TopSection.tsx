@@ -1,6 +1,6 @@
-import { Power3, TweenLite, gsap } from "gsap";
+import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import MenuItem from "../../elements/MenuItem";
@@ -93,8 +93,8 @@ const Container = styled.div`
     }
   }
 `;
-
-export default function TopSection() {
+type TopSectionProps = {};
+export default function TopSection(props: TopSectionProps) {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
@@ -103,7 +103,7 @@ export default function TopSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     window.addEventListener("scroll", handleScroll);
-    TweenLite.from(".title", {
+    gsap.from(".title", {
       scrollTrigger: {
         trigger: ".title",
         toggleActions: "play reset play play",
@@ -111,10 +111,9 @@ export default function TopSection() {
       delay: 0.3,
       duration: 0.5,
       opacity: 0,
-      ease: Power3,
       y: -100,
     });
-    TweenLite.from(".description", {
+    gsap.from(".description", {
       scrollTrigger: {
         trigger: ".description",
         toggleActions: "play reset play play",
@@ -122,10 +121,9 @@ export default function TopSection() {
       delay: 0.8,
       duration: 0.5,
       opacity: 0,
-      ease: Power3,
       x: -100,
     });
-    TweenLite.from(".social-links", {
+    gsap.from(".social-links", {
       scrollTrigger: {
         trigger: ".social-links",
         toggleActions: "play reset play play",
@@ -133,10 +131,9 @@ export default function TopSection() {
       delay: 1.2,
       duration: 0.5,
       opacity: 0,
-      ease: Power3,
       x: 10,
     });
-    TweenLite.from(".bottom", {
+    gsap.from(".bottom", {
       scrollTrigger: {
         trigger: ".bottom",
         toggleActions: "play reset play play",
@@ -144,10 +141,9 @@ export default function TopSection() {
       delay: 1.8,
       duration: 0.5,
       opacity: 0,
-      ease: Power3,
       y: 10,
     });
-    TweenLite.fromTo(
+    gsap.fromTo(
       ".arrow-down",
       { rotate: -10 },
       { rotate: 10, delay: 2, repeat: -1, duration: 0.4, yoyo: true }

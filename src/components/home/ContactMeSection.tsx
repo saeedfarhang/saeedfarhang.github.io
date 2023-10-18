@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import { TweenLite, gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 import styled from "styled-components";
 import Button from "../../elements/Button";
 import SectionTitle from "../../elements/SectionTitle";
 import SocialLink from "../../elements/SocialLink";
 import TextField from "../../elements/TextField";
 import Typography from "../../elements/Typography";
-import { gsap, TweenLite, Power3 } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Container = styled.div`
   .cm-container {
@@ -56,8 +56,8 @@ const Container = styled.div`
     }
   }
 `;
-
-export default function ContactMeSection(props) {
+type ContactMeSectionProps = {};
+export default function ContactMeSection(props: ContactMeSectionProps) {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     TweenLite.from(".cm-title-section", {

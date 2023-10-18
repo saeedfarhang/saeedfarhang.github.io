@@ -17,8 +17,8 @@ const Container = styled.div`
     height: 150px;
   }
 `;
-
-export default function HomePage() {
+type HomePageProps = {};
+export default function HomePage(props: HomePageProps) {
   return (
     <Container>
       <div id="top-section"></div>

@@ -27,8 +27,8 @@ const Container = styled.div`
     }
   }
 `;
-
-export default function AboutCodinguySection(props) {
+type AboutCodinguySectionProps = {};
+export default function AboutCodinguySection(props: AboutCodinguySectionProps) {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {

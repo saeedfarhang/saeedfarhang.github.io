@@ -1,7 +1,8 @@
 import axios from "axios";
+import { TPortfolio } from "core/types/portfolio";
 import { TweenLite, gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Scrollbars from "react-custom-scrollbars";
 import styled from "styled-components";
 import PortFolioCard from "../../elements/PortFolioCard";
@@ -36,9 +37,9 @@ const Container = styled.div`
     }
   }
 `;
-
-export default function PortfolioSection(props) {
-  const [portfolio, setPortfolio] = useState([]);
+type PortfolioSectionProps = {};
+export default function PortfolioSection(props: PortfolioSectionProps) {
+  const [portfolio, setPortfolio] = useState<TPortfolio[]>([]);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     axios
