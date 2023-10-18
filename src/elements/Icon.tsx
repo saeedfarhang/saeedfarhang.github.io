@@ -4,7 +4,7 @@ const Container = styled.div`
   height: fit-content;
 `;
 type IconProps = {
-  icon: "download" | "send";
+  icon: "download" | "send" | string;
 };
 export default function Icon(props: IconProps) {
   return (

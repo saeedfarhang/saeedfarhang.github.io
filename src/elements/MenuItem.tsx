@@ -19,6 +19,7 @@ const Container = styled.div<any>`
 `;
 type MenuItemProps = {
   children: any;
+  marginTop?: number | string;
 };
 export default function MenuItem(props: MenuItemProps) {
   const [hover, setHover] = useState(false);

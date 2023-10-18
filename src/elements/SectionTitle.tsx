@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import Typography from "./Typography";
 
-const Container =
-  styled.div <
-  any >
-  `
+const Container = styled.div<any>`
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -17,7 +14,8 @@ const Container =
   }
 `;
 type SectionTitleProps = {
-  children: any,
+  children: any;
+  className?: string;
 };
 export default function SectionTitle(props: SectionTitleProps) {
   return (
