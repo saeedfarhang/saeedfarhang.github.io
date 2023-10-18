@@ -6,6 +6,7 @@ interface PublishCardMinimalProps {
   imageUrl?: string;
   hover?: any;
   children?: any;
+  className?: string;
 }
 
 const Container = styled.div<PublishCardMinimalProps>`

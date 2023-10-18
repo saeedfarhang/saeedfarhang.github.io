@@ -1,4 +1,3 @@
-import React from "react";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import Button from "../elements/Button";
@@ -49,8 +48,8 @@ const Container = styled.div`
     margin-top: 20px;
   }
 `;
-
-export default function Footer(props) {
+type FooterProps = {};
+export default function Footer(props: FooterProps) {
   return (
     <Container>
       <div className="foot-content">

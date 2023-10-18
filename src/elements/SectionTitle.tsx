@@ -1,8 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 import Typography from "./Typography";
 
-const Container = styled.div`
+const Container =
+  styled.div <
+  any >
+  `
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -14,8 +16,10 @@ const Container = styled.div`
     background-color: #fff;
   }
 `;
-
-export default function SectionTitle(props) {
+type SectionTitleProps = {
+  children: any,
+};
+export default function SectionTitle(props: SectionTitleProps) {
   return (
     <Container {...props}>
       <Typography fontSize="24px" fontWeight="bolder">
