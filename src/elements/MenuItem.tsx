@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import Typography from "./Typography";
-const Container = styled.div`
+const Container = styled.div<any>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,11 @@ const Container = styled.div`
       props.hover ? "translateX(3px)" : "translateX(0)"};
   }
 `;
-
-export default function MenuItem(props) {
+type MenuItemProps = {
+  children: any;
+  marginTop?: number | string;
+};
+export default function MenuItem(props: MenuItemProps) {
   const [hover, setHover] = useState(false);
   return (
     <Container

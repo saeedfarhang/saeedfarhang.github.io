@@ -27,7 +27,7 @@ const Container = styled.div`
 
 interface BlogCardMinimalProps {
   title: string;
-  likeCount: number;
+  likeCount?: number;
 }
 
 const BlogCardMinimal: React.FC<BlogCardMinimalProps> = ({

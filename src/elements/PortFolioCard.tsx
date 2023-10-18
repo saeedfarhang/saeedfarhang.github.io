@@ -1,4 +1,3 @@
-import React from "react";
 import Scrollbars from "react-custom-scrollbars";
 import styled from "styled-components";
 import Typography from "./Typography";
@@ -39,8 +38,12 @@ const Container = styled.div`
     cursor: pointer;
   }
 `;
-
-export default function PortFolioCard(props) {
+type PortFolioCardProps = {
+  children?: any;
+  href?: string;
+  title?: string;
+};
+export default function PortFolioCard(props: PortFolioCardProps) {
   return (
     <Container>
       <Typography

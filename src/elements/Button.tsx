@@ -1,8 +1,22 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { StyledComponent } from "styled-components";
 import Icon from "./Icon";
 import Typography from "./Typography";
-const Container = styled.button`
+
+interface ButtonProps {
+  variant?: "fill" | "transparent";
+  margin?: string;
+  fontWeight?: string;
+  icon?: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Container: StyledComponent<
+  "button",
+  any,
+  ButtonProps
+> = styled.button<any>`
   min-width: 100px;
   width: fit-content;
   height: 35px;
@@ -27,7 +41,7 @@ const Container = styled.button`
   }
 `;
 
-export default function Button(props) {
+export default function Button(props: ButtonProps) {
   return (
     <Container {...props}>
       <Typography

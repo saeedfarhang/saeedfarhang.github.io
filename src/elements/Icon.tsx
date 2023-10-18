@@ -1,11 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 const Container = styled.div`
   width: fit-content;
   height: fit-content;
 `;
-
-export default function Icon(props) {
+type IconProps = {
+  icon: "download" | "send" | string;
+};
+export default function Icon(props: IconProps) {
   return (
     <Container>
       {props.icon && props.icon === "download" ? (

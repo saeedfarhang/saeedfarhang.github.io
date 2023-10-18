@@ -1,4 +1,5 @@
 import axios from "axios";
+import { TBlog } from "core/types/blogs";
 import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
@@ -9,7 +10,7 @@ import PublishCardMinimal from "../../elements/PublishCardMinimal";
 import SocialLink from "../../elements/SocialLink";
 import Typography from "../../elements/Typography";
 
-const Container = styled.div`
+const Container = styled.div<any>`
   background-color: ${(props) => (props.menuOpen ? "#2C2C2C" : "#242424")};
   position: fixed;
   width: ${(props) => (props.menuOpen ? "95%" : "100%")};
@@ -182,15 +183,15 @@ const Container = styled.div`
     z-index: -1;
   }
 `;
-
-export default function NavBar() {
+type NavBarProps = {};
+export default function NavBar(props: NavBarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [offsetYc, setOffsetYc] = useState(0);
   const handleScroll = () => {
     setOffsetYc(window.scrollY);
     setMenuOpen(false);
   };
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState<TBlog[]>([]);
 
   useEffect(() => {
     axios.get(`${process.env.PUBLIC_URL}/data/blog.json`).then((res) => {
@@ -312,12 +313,7 @@ export default function NavBar() {
                     height="196"
                     src="https://www.youtube.com/embed/Xjb5yB6yMPI"
                     title="دریافت اطلاعات از صفحات وب با پایتون - معرفی و نصب سلنیوم | جلسه اول (web scrapping python selenium)"
-                    frameborder="10"
-                    allowfullscreen="allowfullscreen"
-                    mozallowfullscreen="mozallowfullscreen"
-                    msallowfullscreen="msallowfullscreen"
-                    oallowfullscreen="oallowfullscreen"
-                    webkitallowfullscreen="webkitallowfullscreen"
+                    allowFullScreen={true}
                   ></iframe>
                 </PublishCardMinimal>
               </a>
@@ -332,12 +328,7 @@ export default function NavBar() {
                     height="196"
                     src="https://www.youtube.com/embed/vVUFjTBflwU"
                     title="پروژه های جنگو - ساخت اپلیکیشن لیست کارها - معرفی و استارت پروژه | جلسه اول (todo list app django)"
-                    frameborder="10"
-                    allowfullscreen="allowfullscreen"
-                    mozallowfullscreen="mozallowfullscreen"
-                    msallowfullscreen="msallowfullscreen"
-                    oallowfullscreen="oallowfullscreen"
-                    webkitallowfullscreen="webkitallowfullscreen"
+                    allowFullScreen={true}
                   ></iframe>
                 </PublishCardMinimal>
               </a>
