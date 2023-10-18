@@ -1,8 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import Typography from "./Typography";
 const Container = styled.div`
-  min-width: 50px;
+  min-width: 100px;
   width: fit-content;
   height: 30px;
   background-color: #242424;
@@ -10,9 +9,15 @@ const Container = styled.div`
   padding: 8px 16px;
   margin: 10px 7.5px;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-export default function Tag(props) {
+type TagProps = {
+  children: any;
+};
+export default function Tag(props: TagProps) {
   return (
     <Container>
       <Typography
