@@ -1,4 +1,5 @@
 import axios from "axios";
+import { TBlog } from "core/types/blogs";
 import { TweenLite, gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
@@ -24,9 +25,9 @@ const Container = styled.div`
     margin: 0 10vw;
   }
 `;
-
-export default function BlogSection(props) {
-  const [blogs, setBlogs] = useState([]);
+type BlogSectionProps = {};
+export default function BlogSection(props: BlogSectionProps) {
+  const [blogs, setBlogs] = useState<TBlog[]>([]);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {

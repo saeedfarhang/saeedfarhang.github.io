@@ -28,3 +28,13 @@ button {
   outline: none;
   color: #fff;
 }
+
+::selection {
+  background-color: rgb(255, 251, 0);
+  color: black;
+}
+
+::-moz-selection {
+  background-color: rgb(255, 251, 0);
+  color: black;
+}

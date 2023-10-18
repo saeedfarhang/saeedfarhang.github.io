@@ -21,8 +21,8 @@ const Container = styled.div`
     margin: 15px 10vw;
   }
 `;
-
-export default function PublishesSection(props) {
+type PublishesSectionProps = {};
+export default function PublishesSection(props: PublishesSectionProps) {
   const [publishes, setPublishes] = useState([]);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
