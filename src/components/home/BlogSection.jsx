@@ -34,15 +34,16 @@ export default function BlogSection(props) {
       setBlogs(res.data);
     });
 
-    TweenLite.from(".blog-section-title", {
+    gsap.from(".blog-section-title", {
       scrollTrigger: {
-        scrub: 1,
         trigger: ".blog-section-title",
-        start: "top 100%",
-        end: "top 20%",
+        scrub: 1,
+        start: "top 80%",
+        end: "bottom 250px",
       },
+      duration: 1.3,
       opacity: 0,
-      x: "50vw",
+      x: -10,
     });
     TweenLite.from(".blogcards-container", {
       scrollTrigger: {

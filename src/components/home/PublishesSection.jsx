@@ -1,7 +1,7 @@
 import axios from "axios";
-import { TweenLite, gsap } from "gsap";
+import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import PublishCard from "../../elements/PublishCard";
 import SectionTitle from "../../elements/SectionTitle";
@@ -30,17 +30,18 @@ export default function PublishesSection(props) {
       setPublishes(res.data);
     });
 
-    TweenLite.from(".publishes-title-section", {
+    gsap.from(".publishes-title-section", {
       scrollTrigger: {
         trigger: ".publishes-title-section",
         scrub: 1,
-        start: "top 100%",
-        end: "top 20%",
+        start: "top 80%",
+        end: "bottom 250px",
       },
+      duration: 1.3,
       opacity: 0,
-      x: "50vw",
+      x: -10,
     });
-    TweenLite.from(".p-seemore", {
+    gsap.from(".p-seemore", {
       scrollTrigger: {
         scrub: 1,
         trigger: ".p-seemore",
@@ -49,7 +50,7 @@ export default function PublishesSection(props) {
       },
       x: -500,
     });
-    TweenLite.from(".pc-container", {
+    gsap.from(".pc-container", {
       scrollTrigger: {
         trigger: ".pc-container",
         start: "top 90%",
